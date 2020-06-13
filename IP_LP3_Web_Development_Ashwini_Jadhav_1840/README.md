@@ -1,10 +1,10 @@
-# Cloudcounselage-LP3 Assignment
+# Cloudcounselage LP3_Assignment_Web_Development
 
 
 For running the project :
 
-Step:1 - Navigate to the main folder (CloudCounselage-LP3) on terminal.
+Step:1 - Navigate to the main folder (IP_LP3_Web_Development_Ashwini_Jadhav_1840) on terminal 
+          --> cd IP_LP3_Web_Development_Ashwini_Jadhav_1840
 
-Step:2 - Install : npm install express axios morgan nodemon concurrently 
-
-Step:3 - Run the command : npm run dev
+Step:2 - Run the command 
+          -->npm run dev
