@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wheather Convertor</title>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+         body
+        {
+            margin-top: 70px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+
+</head>
+</body>
+    <form name="f1">
+        <center>
+        <input type="button" class="btn btn-primary" onclick="timeanddate()"  value="Display time and date">
+        </center>
+    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="display-4 text-center mb-3">Weight Convertor</h1>
+                <form>
+                    <div class="form-group">
+                         <input type="number" id="lbsinput" placeholder="Enter Pound..." class="form-control form-control-lg">
+                    </div>
+                </form>
+            <div id="output">
+                <div class="card card-primary mb-2" style="background-color:blue;">
+                    <div class="card-block ">
+                        <h4>Grams:</h4>
+                        <div id="garmOutput"></div>
+                    </div>
+                </div>
+
+                <div class="card bg-primary mb-2"  >
+                    <div class="card-block">
+                        <h4>Kilograms:</h4>
+                        <div id="kgOutput"></div>
+                    </div>
+                </div>
+
+                <div class="card card-danger mb-2" style="background-color:red;">
+                    <div class="card-block">
+                        <h4>Ounces:</h4>
+                        <div id="ozOutput"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function timeanddate(){
+            var d = new Date();
+            document.write(d)
+        }
+      // document.getElementById('output').style.visibility='hidden';
+        document.getElementById('lbsinput').addEventListener('input',function(e)
+        {
+          // document.getElementById('output').style.visibility='visible';
+           let pounds = e.target.value;
+            document.getElementById('garmOutput').innerHTML= pounds/0.0022046;
+            document.getElementById('kgOutput').innerHTML= pounds/2.2046;
+            document.getElementById('ozOutput').innerHTML= pounds*16;
+            
+        });
+    </script>
+</body>
+</html>
