@@ -1,0 +1,7 @@
+Once we have the folder: IP_LP3_Machine_Learning_Aditya_Kotkar_2698
+
+1. Make sure you have required dependencies or packages.
+2. Run model.py for training the model.
+3. In model.py we can predict two ways:
+  a. With images from validation or test set
+  b. With custom images. You can generate image of color using imageGenerator.py and take that image/s as input for prediction.
