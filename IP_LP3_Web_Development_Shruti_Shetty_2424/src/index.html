@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Client</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.css">
+  
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <h1>Date and Time</h1>
+  <hr >
+  
+
+</head>
+
+  <body ng-app='datetimeapp'>
+
+
+    <div ng-controller="myCtrl" >
+      
+      <p>{{ CurrentDate | date:'dd/MM/yyyy'}}</p>
+
+      
+
+      <p>{{ CurrentDate | date:'HH:mm:ss'}}</p>
+
+    </div>
+
+
+
+  <script type="text/javascript">
+
+
+
+   var app = angular.module('datetimeapp', []);
+app.controller('myCtrl', ['$scope', '$http', function ($scope, $http) {
+
+      $scope.CurrentDate = new Date();
+
+   }]);
+
+</script>
+</body>
+  <app-root>
+</app-root>
+
+</html>
