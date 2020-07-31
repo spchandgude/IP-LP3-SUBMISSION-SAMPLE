@@ -1,0 +1,28 @@
+{
+    "name": "rest-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "start-watch": "nodemon src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "client": "cd my-app npm start",
+        "dev": "concurrently\"npm run src/index\"\"npm run my-app\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "aos": "^2.3.4",
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "gatsby-plugin-sass": "^2.2.4",
+        "mongoose": "^5.9.7",
+        "node-sass": "^4.14.0",
+        "smooth-scrollbar": "^8.5.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.3"
+    }
+}
