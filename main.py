@@ -18,7 +18,7 @@ def TsvtoCsv(tsvfile,_outcsv):
                 for line in _inputfile:
                     _resultline=re.sub("\t",",",line)
                     newcsvfile.write(_resultline)
-                    print("Congrats!! Successfully Converted..")
+                print("Congrats!! Successfully Converted..")
     except Exception as e:
         print("Error while converting tsv  to csv -", e)
 
